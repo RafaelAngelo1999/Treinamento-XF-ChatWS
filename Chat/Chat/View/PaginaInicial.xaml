@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Chat.View.PaginaInicial"
+             BackgroundColor="#B22222">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Chat Otmz" TextColor="White"/>
+            <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Image Source="img/otmz.png"/>
+                <Entry WidthRequest="250" Text="{Binding Nome}" Placeholder="Nome" BackgroundColor="White" TextColor="#B22222"/>
+                <Entry WidthRequest="250" Text="{Binding Senha}" IsPassword="True" Placeholder="Password" BackgroundColor="White" TextColor="#B22222"/>
+                <Button BackgroundColor="Transparent" TextColor="White" Text="Entrar" Command="{Binding AcessarCommand}"/>
+                <Label Text="{Binding Mensagem}" TextColor="White"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
